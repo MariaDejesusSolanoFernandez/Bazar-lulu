@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/foo.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Bazar Lulu</a>
+        <div class="menu-toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#" >Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="carritot/index.php">Porductos</a></li>
+                <li><a href="php/login.php">Ingresar</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="carritot/mostrarCarrito.php">Carrito</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+    <section class="main-container">
+        <article class="article2">
+            <div class="slider">
+                <ul>
+                    <li>
+                        <img src="img/slider4.png" alt="">                    
+                    </li>
+                    <li>
+                        <img src="img/slider2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/slider3.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/slider1.jpg"  alt="">
+                    </li>
+                </ul>
+            </div>
+        </article>
+</section>
+
+<section class="sec">
+<div class="testimonial-section">
+    <div class="inner-width">
+       
+        <h1 >Administradores</h1>   
+       <h1 class="adm"></h1> 
+        <div class="testimonial-pics">
+            <img src="img/irma.jpg" alt="test-1" class="active">
+            <img src="img/samuel.jpg" alt="test-2">
+            <img src="img/marian.jpeg" alt="test-3">
+            <img src="img/marcos.jpg" alt="test-4">
+        </div>
+
+      <div class="testimonial-contents">
+        <div class="testimonial active" id="test-1">
+          <p class="parrafo">Hola, en compañia de unos amigos, emos abierto un bazar online que es una gran herramienty sabemos 
+            que muchas cosas pueden mejorar, sin embargo queremos agradecer por su apoyo!
+          </p>
+          <span class="description">Irma Martinez</span>
+        </div>
+
+        <div class="testimonial" id="test-2">
+          <p class="parrafo">Bazar Lulu, siempre ha estado ahí desde el principio. Con su ayuda y profesionalidad, 
+            te resultara cómodo y sencillo poner en marcha tus compras en la web. Además siempre estára cuando lo necesites</p>
+          <span class="description">Samuel Zarrabal</span>
+        </div>
+
+        <div class="testimonial" id="test-3">
+          <p class="parrafo">A solo menos de 1 mes de haber creado la tienda, hemos hecho la primera venta, 
+            Gracias. Muchas gracias, estamos muy contentos, hay que seguir mejorando, pero el esfuerzo tiene recompensa.</p>
+          <span class="description">Maria Solano</span>
+        </div>
+
+        <div class="testimonial" id="test-4">
+          <p class="parrafo">Me encanta trabajar Bazar Lulu, la predisposición para hacer algo que sea excelente 
+            es muy buena, hemos conectado desde el primer día, a los dos nos gusta trabajar con el objetivo en mente.</p>
+          <span class="description">Marcos Aniceto</span>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <script type="text/javascript">
+    $('.testimonial-pics img').click(function(){
+      $(".testimonial-pics img").removeClass("active");
+      $(this).addClass("active");
+
+      $(".testimonial").removeClass("active");
+      $("#"+$(this).attr("alt")).addClass("active");
+    });
+  </script>
+</section>
+
+
+
+<section class="foo">
+<footer class="flex-rw">
+<ul class="footer-list-top">    
+  <li>
+    <h4 class="footer-list-header">Bazar Lulu</h4></li>
+  <li><a href="acerca.html" target="_blank" class="generic-anchor footer-list-anchor" itemprop="significantLink">ACERCA DE</a></li>
+  <li><a href="#" target="_blank" class="generic-anchor footer-list-anchor" itemprop="significantLink">PRODUCTOS</a></li>
+  <li><a href="contacto.html" target="_blank" class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACTO</a></li>
+  <li><a href="sesion.php" target="_blank" itemprop="significantLink" class="generic-anchor footer-list-anchor">INGRESAR</a></li>
+</ul>
+
+<ul class="footer-list-top">
+  <li> <h4 class="footer-list-header">Paginas Similares</h4></li> 
+  <li><a href='https://bazar-e.mx/' target="_blank" class="generic-anchor footer-list-anchor">BAZAR-E</a></li>
+  <li><a href='https://www.kichink.com/stores/gran-bazar-online' target="_blank" class="generic-anchor footer-list-anchor">KICHINK</a></li>
+  <li><a href='https://www.bazarvintage.es/' target="_blank" class="generic-anchor footer-list-anchor">BAZAR VINTAGE</a></li>
+  <li><a href='http://todoloqueadoro.blogspot.com/2012/12/bazar-vintage-chic.html' target="_blank" class="generic-anchor footer-list-anchor">BAZAR VINTAGE & CHIC</a></li>
+</ul>
+
+<ul class="footer-list-top">
+<li> <h4 class="footer-list-header">Descarga nuestra app</h4></li>
+<li><a href='https://signup.lan.leagueoflegends.com/es/signup/index#/' class="generic-anchor footer-list-anchor">AQUI</a></li>
+</ul>
+
+<section class="footer-social-section flex-rw">
+  <span class="footer-social-overlap footer-social-connect">
+Nuestras <span class="footer-social-small">Redes</span>Sociales
+  </span>
+  <span class="footer-social-overlap footer-social-icons-wrapper">
+    <ul class="social-media">
+      <li><a href="#" class="generic-anchor" target="_blank" ><i class="fab  fa-facebook-square"></i></a></li>
+      <li><a href="#" class="generic-anchor" target="_blank" ><i class="fab  fa-twitter-square"></i></a></li>
+      <li><a href="#" class="generic-anchor" target="_blank" ><i class="fab  fa-instagram"></i></a></li>
+      <li><a href="#" class="generic-anchor" target="_blank" ><i class="fab  fa-google-plus-square"></i></a></li>
+  </ul> 
+  </span>
+</section>
+
+
+<div class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright"> 
+</i> 2019 Sistemas <address class="footer-address" role="company address">703-A</address><span class="footer-bottom-rights"> - Irma, Maria, Samuel- </span>
+  </div>
+  <div class="footer-bottom-wrapper">
+  <a href="http://www.itsco.edu.mx/" class="generic-anchor" rel="nofollow">ITSCO</a> | <a href="https://itscosistemas.net/avirtual/" class="generic-anchor" rel="nofollow">MOODLE</a>
+    </div>
+  </div>
+</footer>
+</section>
+    
+
+</body>
+</html>
